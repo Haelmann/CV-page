@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 10px;
+    background: #f1f1f1;
+    }
+
+.header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid black;
+    border-bottom: none;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.topnav {
+    border: 2px solid black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: none;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+}
+
+.topnav a {
+    display: block;
+    float: left;
+    padding: 14px;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.topnav a:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.card{
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.rightColumn {
+    padding-left: 20px;
+    float:right;
+    width: 25%;
+}
+
+.leftColumn {
+    float:left;
+    width: 75%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 800px){
+    .leftColumn, .rightColumn{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .topnav {
+        float: none;
+        width: 100%;
+    }
+}
