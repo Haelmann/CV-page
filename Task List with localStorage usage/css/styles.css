@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 6fr 1fr);
+    grid-template-rows: 75px 75px auto;
+    row-gap: 0.5rem;
+    }
+
+.header {
+    display: grid;
+    grid-column: 2 / 3;
+    background-color: mediumslateblue;
+    color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-top: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.inputField {
+    background-color: rgba(196, 171, 219, 0.493);
+    padding-left: 2rem;
+    display: grid;
+    align-items: center;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.taskListTable {
+    
+    background-color: rgba(196, 171, 219, 0.493);
+    border: 3px solid rgba(59, 25, 92, 0.493);
+    border-radius: 5px;
+    grid-column-start: 2;
+}
+
+ul {
+    list-style:none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    background-color: rgba(230, 247, 225, 0.726);
+    padding-left: 1rem;
+    margin: 0px 10px 10px;
+    list-style-position: inside;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+li:first-child {
+    margin-top: 10px;
+}
+
+.completed {
+    text-decoration-line: line-through;
+}
+
